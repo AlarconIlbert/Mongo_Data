@@ -1,3 +1,3 @@
 use("PLATZI_STORE")
 
-db.users.find()
+db.products.find()

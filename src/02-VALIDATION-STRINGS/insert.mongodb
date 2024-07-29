@@ -1,0 +1,6 @@
+use("PLATZI_STORE")
+
+db.users.insertOne({
+    last_name: 'Molina',
+    email: 1321
+})

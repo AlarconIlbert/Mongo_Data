@@ -1,0 +1,10 @@
+use("PLATZI_STORE")
+
+db.products.insertOne({
+    name: 'Camisetas',
+    size: ['L','M','S'],
+    category: {
+        name: 'New Category',
+        imagen: ''
+    }
+})

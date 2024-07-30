@@ -1,0 +1,39 @@
+use("PLATZI_STORE")
+
+db.getCollectionInfos()
+
+db.runCommand({
+    collMod: 'product',
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            required: ['name'],
+            additionalProperties: true,
+            properties: {
+                name: {
+                    bsonType: 'string'
+                },
+                size: {
+                    bsonType: 'array',
+                    minItems: 1,
+                    uniqueItems: true,
+                    items: {
+                        bsonType: 'string'
+                    }
+                },
+                category: {
+                    bsonType: 'object',
+                    required: ['name'],
+                    properties: {
+                        name: {
+                            bsonType: 'string'
+                        },
+                        imagen: {
+                            bsonType: 'string'
+                        },
+                    }
+                }
+            }
+        }
+    }
+})

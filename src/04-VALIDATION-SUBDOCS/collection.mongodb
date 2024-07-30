@@ -27,6 +27,7 @@ db.createCollection('products', {
                         imagen: {
                             bsonType: 'string'
                         },
+                    }
                 }
             }
         }

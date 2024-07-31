@@ -1,0 +1,16 @@
+use("PLATZI_STORE")
+
+db.stores.insertOne({
+    storeId: 'ST001',
+    name: 'ilbert Store',
+    address: 'CR 15f 45',
+})
+
+db.stores_details.insertOne({
+    storeId: 'ST001',
+    description: 'text text',
+    manager: {
+        email: 'ferf3frref@dfgdfg.com',
+        cell: '3214561845'
+    }
+})

@@ -1,0 +1,5 @@
+use("PLATZI_STORE")
+
+db.users.find({
+    "role": "admin"
+})

@@ -1,0 +1,18 @@
+use("PLATZI_STORE")
+
+db.users.insertOne({
+    last_name: 'asfdsfdf',
+    email: 'sdfdsfsdffdsd@gmail.com',
+    password: 'dsfdsf5545dthpol15,',
+    role: 'admin',
+    addres: {
+        street: 'cr 891',
+        city: 'Bogota',
+        zip: '11011'
+    },
+    shipping_addres: {
+        street: 'cr 1232 45',
+        city: 'Bogota',
+        zip: '12011'
+    }
+})

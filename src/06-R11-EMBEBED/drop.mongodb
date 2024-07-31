@@ -1,0 +1,3 @@
+use("PLATZI_STORE")
+
+db.users.drop()
